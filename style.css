@@ -57,6 +57,9 @@ header{
     justify-content: space-between;
 }
 
+ .parentflex .right .navbar{
+    display:none;
+}
 .parent .right li{
     margin-left:25px;
 }
@@ -103,11 +106,19 @@ header{
  color:white;
 }
 
+.right1 .flexone{
+    position:relative;
+    overflow: hidden;
+    height: 400px;
+    width:400px;
+    border-radius:50%;
+}
+
 .secondpart .right1 img{
     border-radius: 50%;
     background-color: #282828;
-    height: 400px;
-    width:400px;
+    height: 100%;
+    width:100%;
     object-fit: cover;
 
    
@@ -125,21 +136,17 @@ header{
 
 .right1 .flexone .secondimg{
     background-color: #FF4382;
-    height: 340px;
-    width:340px;
+    /* height: 340px;
+    width:340px; */
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
     border-radius: 50%;
     position:absolute;
     top:-170px;
     right:-180px;
 }
 
-.right1 .flexone{
-    position:relative;
-    overflow: hidden;
-    height: 400px;
-    width:400px;
-    border-radius:50%;
-}
+
 
 
 .thirdpart .left2 p{
@@ -273,38 +280,36 @@ header{
 color:white;
 font-size:12px;
 margin-top:10px;
+margin-bottom: 6px;
+
 }
 .fourthpart h2{
     color:white;
-    font-size: 18px;
-    padding-left:21px;
-    padding-top:20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .fourthpart .bold{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom:20px;
     
 
 }
-
+ 
 .fourthpart .flextwo{
     display:flex;
+    height:108px;
 }
+
 .fourthpart .flexthree{
     display:flex;
-    padding-top:10px;
-    padding-bottom:20px;
 
 }
 .fourthpart .flexthree p{
-    padding-left:20px;
+    margin-right:20px;
 }
-.fourthpart  .text{
-    padding-left:20px;
-}
+
 
 .fourthpart .combine{
     background-color: #282828;
@@ -312,6 +317,9 @@ margin-top:10px;
     margin-bottom:24px;
 }
 
+.fourthpart .combine .paragraph1{
+    padding:10px;
+}
 .fifthpart h2{
     color:white;
     font-weight: bold;
@@ -429,6 +437,7 @@ footer .middle3 ul{
 .anything .righticon{
     position:absolute;
     right:15px;
+    top:15px;
 }
 
 .anything .playbutton{
@@ -514,3 +523,592 @@ footer .forflex .left3 .together{
     padding:20px;
 }
 
+@media (max-width:1300px) {
+    .right1 .flexone{
+        width: 300px;
+        height: 300px;
+    }
+    .right1 .flexone .secondimg{
+        top:-106px;
+        right:-118px;
+    }
+
+
+    .secondpart .left1 h1{
+       
+        font-size: 40px;
+      
+    }
+}
+@media (max-width:1199px)
+{
+    .parent {
+        padding-left: 70px;
+        padding-right: 70px;
+}
+
+.anything {
+    padding-bottom: 80px;
+}
+}
+@media (max-width:991px) {
+    .parent header .right  .flex{
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+ 
+    .parent{
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+    
+ .parent .parentflex{
+     align-items: center;
+  }
+  
+  .parent .right .navbar{
+     height:22px;
+     width:24px;
+     background-color: transparent;
+     border: none;
+     border-bottom:2px solid white;
+     position:relative;
+     
+  }
+  
+  .parent .right .navbar::before{
+     content:"";
+     height:2px;
+     width:24px;
+     background-color: white;
+     display:block;
+     top:0px;
+     position:absolute;
+  }
+  
+  
+  
+  .parent .right .navbar::after{
+     content:"";
+     height:2px;
+     width:24px;
+     background-color: white;
+     display:block;
+     top:10px;
+     position:absolute;
+  }
+  
+  .parentflex .flex li{
+    margin-bottom:25px;
+  
+  }
+  .parent header .right .flex {
+     background-color: #282828;
+     width: 0;
+     overflow: hidden;
+     transition: all 0.5s;
+  }
+  .parent header .right .flex.active{
+     width: 200px;
+     padding: 20px;
+  }
+  
+  .parent .right li{
+     margin-left:0;
+  }
+  
+  .parentflex .right .navbar{
+     display:block;
+  }
+  .secondpart .left1 h1{
+       
+    font-size: 32px;
+  
+}
+.secondpart .left1 p {
+  font-size: 15px;
+}
+.fifthpart button  {
+    margin-right: 15px;
+    
+}
+.fifthpart button:last-child{
+    margin-right: 0;
+}
+.left2 .new h2 {
+    font-size: 24px;
+}
+footer {
+    background-color: #080808;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top:15px;
+    padding-bottom: 15px;
+   
+}
+.div img{
+    width: 100%;
+    max-width: 538px;
+}
+
+.anything .lefticon img{
+    height:60px;
+}
+.anything .righticon img{
+    height:60px;
+}
+.anything{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+} 
+@media (max-width:767px){
+
+    .parent header .right  .flex{
+       display:block;
+       position:fixed;
+       top:0;
+       left:0;
+   }
+
+   .parent{
+       padding-left: 20px;
+       padding-right: 20px;
+   
+   }
+   
+.parent .parentflex{
+    align-items: center;
+ }
+ 
+ .parent .right .navbar{
+    height:22px;
+    width:24px;
+    background-color: transparent;
+    border: none;
+    border-bottom:2px solid white;
+    position:relative;
+    
+ }
+ 
+ .parent .right .navbar::before{
+    content:"";
+    height:2px;
+    width:24px;
+    background-color: white;
+    display:block;
+    top:0px;
+    position:absolute;
+ }
+ 
+ 
+ 
+ .parent .right .navbar::after{
+    content:"";
+    height:2px;
+    width:24px;
+    background-color: white;
+    display:block;
+    top:10px;
+    position:absolute;
+ }
+ 
+ .parentflex .flex li{
+   margin-bottom:25px;
+ 
+ }
+ .parent header .right .flex {
+    background-color: #282828;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+ }
+ .parent header .right .flex.active{
+    width: 200px;
+    padding: 20px;
+ }
+ 
+ .parent .right li{
+    margin-left:0;
+ }
+ 
+ .parentflex .right .navbar{
+    display:block;
+ }
+
+   .secondpart .left1{
+       width:100%;
+   }
+   .secondpart .left1 h1{
+       font-size: 32px;
+   } 
+   .secondpart .left1 p{
+    font-size: 18px;
+    max-width: 100%;
+   }
+   .right1 .flexone {
+    width: 400px;
+    height: 400px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+   .secondpart {
+      display:block;
+   } 
+   .secondpart .left1 .join{
+       margin-bottom:25px;
+   }
+   .secondpart .right1 {
+    width: 100%;
+}
+.right1 .flexone .secondimg {
+    top: -186px;
+    right: -170px;
+}
+.left2 .new h2 {
+
+    font-size: 26px;
+    
+}
+
+
+   .thirdpart .flexbox .paragraph {
+       padding: 15px;
+   }
+   .thirdpart .flexbox .paragraph h1 {
+       font-size: 24px;
+   }
+   .thirdpart .flexbox .paragraph .page {
+       padding-top: 22px;
+       font-size: 15px;
+   }
+
+   .recent{
+       font-size: 26px;
+   }
+   .thirdpart .left2 .doubleflex {
+       margin-top:15px;
+   }
+
+   .thirdpart .left2{
+       width:100%;
+   }
+
+   .thirdpart .againflex{
+       display:block;
+   }
+
+   .thirdpart .right2{
+       width:100%;
+   }
+   .fourthpart .bold {
+       font-size: 26px;
+       margin-bottom: 25px;
+
+}
+.fourthpart h2{
+    font-size: 20px;
+}
+.fourthpart p{
+    font-size: 15px;
+}
+
+.fifthpart h2{
+   font-size: 26px;
+   margin-bottom:16px;
+}
+.anything{
+   margin-top: 20px;
+   padding-bottom:90px;
+}
+
+.anything .inline{
+   font-size:18px ;
+}
+.anything p {
+   padding: 14px;
+   font-size: 16px;
+}
+
+.anything .righticon img{
+   height:66px;
+}
+.anything .lefticon img{
+   height:66px;
+}
+
+.div img{
+
+   width:100%;
+}
+
+footer .forflex .left3 .fourteen {
+   max-width: 100%;
+}
+
+footer{
+   padding-left:5px;
+   padding-right:5px;
+
+}
+footer .forflex .left3{
+   width:100%;
+   margin-top:20px;
+}
+footer .forflex .middle3{
+   width:100%;
+   margin-top:20px;
+   font-size:22px;
+}
+footer .forflex .right3{
+   width:100%;
+   margin-top:20px;
+   font-size:22px;
+}
+
+footer .forflex .left3 .together{
+   font-size:30px;
+}
+
+
+footer .forflex .middle3 li{
+   font-size:15px;
+}
+
+
+footer .forflex{
+   flex-wrap: wrap;
+}
+
+.thirdpart .right2{
+   padding-left:0;
+}
+.thirdpart .left2{
+   padding-right:0;
+}
+
+.secondpart{
+   padding:35px;
+}
+
+header{
+   padding:15px;
+}
+
+.secondpart{
+   padding:25px;
+}
+
+}
+
+@media (max-width:575px){
+
+     .parent header .right  .flex{
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+
+    .parent{
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+    .secondpart .left1{
+        width:100%;
+    }
+    .secondpart .left1 h1{
+        font-size: 20px;
+    } 
+    .secondpart {
+       display:block;
+    } 
+    .secondpart .left1 .join{
+        margin-bottom:25px;
+    }
+    .thirdpart .flexbox .paragraph {
+        padding: 10px;
+    }
+    .thirdpart .flexbox .paragraph h1 {
+        font-size: 16px;
+    }
+    .thirdpart .flexbox .paragraph .page {
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+    .recent{
+        font-size: 20px;
+    }
+    .thirdpart .left2 .doubleflex {
+        margin-top:15px;
+    }
+
+    .thirdpart .left2{
+        width:100%;
+    }
+
+    .thirdpart .againflex{
+        display:block;
+    }
+
+    .thirdpart .right2{
+        width:100%;
+    }
+    .fourthpart .bold {
+        font-size: 16px;
+        margin-bottom: 18px;
+
+ }
+
+ .fifthpart h2{
+    font-size: 16px;
+    margin-bottom:12px;
+ }
+.anything{
+    margin-top: 20px;
+    padding-bottom:90px;
+}
+
+.anything .inline{
+    font-size:15px ;
+}
+.anything p {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.anything .righticon img{
+    height:60px;
+}
+.anything .lefticon img{
+    height:60px;
+}
+
+.div img{
+
+    width:100%;
+}
+
+footer .forflex .left3 .fourteen {
+    max-width: 100%;
+}
+
+footer{
+    padding-left:5px;
+    padding-right:5px;
+
+}
+footer .forflex .left3{
+    width:100%;
+    margin-top:20px;
+}
+footer .forflex .middle3{
+    width:100%;
+    margin-top:20px;
+    font-size:22px;
+}
+footer .forflex .right3{
+    width:100%;
+    margin-top:20px;
+    font-size:22px;
+}
+
+footer .forflex .left3 .together{
+    font-size:30px;
+}
+
+
+footer .forflex .middle3 li{
+    font-size:15px;
+}
+
+
+footer .forflex{
+    flex-wrap: wrap;
+}
+
+.thirdpart .right2{
+    padding-left:0;
+}
+.thirdpart .left2{
+    padding-right:0;
+}
+
+.secondpart{
+    padding:35px;
+}
+
+header{
+    padding:15px;
+}
+
+.secondpart{
+    padding:25px;
+}
+
+.parent .parentflex{
+    align-items: center;
+}
+
+.parent .right .navbar{
+    height:22px;
+    width:24px;
+    background-color: transparent;
+    border: none;
+    border-bottom:2px solid white;
+    position:relative;
+    
+}
+
+.parent .right .navbar::before{
+    content:"";
+    height:2px;
+    width:24px;
+    background-color: white;
+    display:block;
+    top:0px;
+    position:absolute;
+}
+
+
+
+.parent .right .navbar::after{
+    content:"";
+    height:2px;
+    width:24px;
+    background-color: white;
+    display:block;
+    top:10px;
+    position:absolute;
+}
+
+.parentflex .flex li{
+   margin-bottom:25px;
+
+}
+.parent header .right .flex {
+    background-color: #282828;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.parent header .right .flex.active{
+    width: 200px;
+    padding: 20px;
+}
+
+.parent .right li{
+    margin-left:0;
+}
+
+.parentflex .right .navbar{
+    display:block;
+}
+}

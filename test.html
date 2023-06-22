@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        .flex .left {
+            width: 50%;
+            background-color: red;
+        }
+
+        .flex .right {
+            width: 50%;
+            background-color: green;
+        }
+
+        @media (max-width:1199px) {}
+
+        @media (max-width:1024px) {}
+
+        @media (max-width:991px) {}
+
+        @media (max-width:767px) {
+            .flex {
+                display: flex;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin-top: 10px;
+            }
+
+            .flex .left {
+                width: 50%;
+                background-color: blue;
+                padding: 10px;
+            }
+
+            .flex .right {
+                width: 50%;
+                background-color: yellow;
+                padding: 10px;
+
+            }
+        }
+
+        @media (max-width:575px) {
+            .flex {
+                display: flex;
+                font-size: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 15px;
+
+            }
+
+            .flex .left {
+                width: 50%;
+                background-color: orangered;
+                padding: 10px;
+            }
+
+            .flex .right {
+                width: 50%;
+                background-color: skyblue;
+                padding: 10px;
+            }
+
+            /* body {
+                background-color: rgb(255, 94, 0);
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="left">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae iste omnis, facere debitis esse
+                repudiandae.</p>
+        </div>
+        <div class="right">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae iste omnis, facere debitis esse
+                repudiandae.</p>
+        </div>
+    </div>
+</body>
+
+</html>
